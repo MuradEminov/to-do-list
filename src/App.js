@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ListItems from './ListItems';
 import './App.css';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
             <button type='add'>hinzufügen</button>
           </form>
         </header>
+        <ListItems items={items}></ListItems>
       </div>
     </div>
   );
