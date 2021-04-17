@@ -34,6 +34,18 @@ const App = () => {
     setItems([...filteredItems]);
   };
 
+  const setUpdate = (text, key) => {
+    const updatedItems = items;
+    updatedItems.map((item) => {
+      if (item.key === key) {
+        item.text = text;
+      }
+      const arr = [];
+      setItems([...arr]);
+      setItems([...updatedItems]);
+    });
+  };
+
   return (
     <div>
       <div className='App'>
@@ -51,6 +63,7 @@ const App = () => {
         <ListItems
           items={items}
           deleteItem={(key) => deleteItem(key)}
+          setUpdate={(text, key) => setUpdate(text, key)}
         ></ListItems>
       </div>
     </div>
