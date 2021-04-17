@@ -7,3 +7,7 @@
   border-radius: 5px;
   font-size: 18px;
 }
+
+.list p {
+  padding: 15px;
+}
