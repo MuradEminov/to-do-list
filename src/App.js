@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 
 const App = () => {
@@ -11,7 +10,7 @@ const App = () => {
         </form>
       </header>
     </div>
-=======
+ 
 import React, { useState } from 'react';
 import ListItems from './ListItems';
 import './App.css';
@@ -101,7 +100,7 @@ const App = () => {
         <DoneItems />
       </div>
     </DoneListContext.Provider>
->>>>>>> dev
+ 
   );
 };
 
