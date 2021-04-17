@@ -18,6 +18,14 @@ const ListItems = (props) => {
             }}
           />
           <span>
+            <button
+              className='ready-button'
+              onClick={() => props.handleDone(item.key, item.text)}
+            >
+              fertig
+            </button>
+          </span>
+          <span>
             <FontAwesomeIcon
               className='faicon'
               icon='trash'

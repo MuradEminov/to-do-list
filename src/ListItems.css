@@ -32,3 +32,12 @@
 .list p input:focus {
   outline: none;
 }
+
+.ready-button {
+  margin-right: 30px;
+  height: 25px;
+  background-color: yellowgreen;
+  color: aliceblue;
+  border-radius: 15px;
+  outline: none;
+}
