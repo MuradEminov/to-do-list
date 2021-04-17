@@ -25,6 +25,15 @@ const App = () => {
     setCurrentItem({ text: '', key: '' });
   };
 
+  const deleteItem = (key) => {
+    console.log(key);
+    const filteredItems = items.filter((item) => item.key !== key);
+    console.log(filteredItems);
+    const arr = [];
+    setItems([...arr]);
+    setItems([...filteredItems]);
+  };
+
   return (
     <div>
       <div className='App'>
@@ -39,7 +48,10 @@ const App = () => {
             <button type='add'>hinzufügen</button>
           </form>
         </header>
-        <ListItems items={items}></ListItems>
+        <ListItems
+          items={items}
+          deleteItem={(key) => deleteItem(key)}
+        ></ListItems>
       </div>
     </div>
   );
