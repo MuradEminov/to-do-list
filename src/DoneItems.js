@@ -7,8 +7,8 @@ const DoneItems = (props) => {
   const doneList = useContext(DoneListContext);
   return (
     <div className='Done'>
-      <DoneListItems />
       <p id='done-items'>Einträge bereits abgehakt: {doneList.length} </p>
+      <DoneListItems />
     </div>
   );
 };
