@@ -6,3 +6,12 @@
   margin-top: 5px;
   padding: 2px;
 }
+
+p#done-items {
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+  border: 2px blueviolet dashed;
+  background-color: rgb(222, 216, 247);
+  padding: 8px;
+}
